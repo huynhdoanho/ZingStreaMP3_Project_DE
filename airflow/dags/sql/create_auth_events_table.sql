@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS staging.auth_events (
+    ts TIMESTAMP,
+    sessionId INTEGER,
+    level VARCHAR(255),
+    itemInSession INTEGER,
+    city VARCHAR(255),
+    zip INTEGER,
+    state VARCHAR(255),
+    userAgent VARCHAR(255),
+    lon DOUBLE PRECISION,
+    lat DOUBLE PRECISION,
+    userId INTEGER,
+    lastName VARCHAR(255),
+    firstName VARCHAR(255),
+    gender VARCHAR(255),
+    registration BIGINT,
+    success BOOLEAN,
+    month INTEGER,
+    day INTEGER,
+    hour INTEGER
+    );

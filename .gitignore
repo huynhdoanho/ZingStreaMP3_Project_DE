@@ -1,0 +1,5 @@
+/minio
+/postgres_airflow
+/postgres_zingstreamp3
+/test
+/.idea
