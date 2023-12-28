@@ -41,13 +41,15 @@ RUN echo "[core]" >> /opt/airflow/airflow.cfg && \
 USER airflow
 
 # install packages
-RUN pip install pyspark
-RUN pip install minio
-RUN pip install pyarrow
-RUN pip install pandas
-RUN pip install apache-airflow
-RUN pip install apache-airflow-providers-postgres
-RUN pip install dbt-postgres
-RUN pip install dbt-core
-RUN pip install sqlalchemy
+COPY ./requirements.txt /opt/airflow/requirements.txt
+RUN pip install -r /opt/airflow/requirements.txt
+#RUN pip install pyspark
+#RUN pip install minio
+#RUN pip install pyarrow
+#RUN pip install pandas
+#RUN pip install apache-airflow
+#RUN pip install apache-airflow-providers-postgres
+#RUN pip install dbt-postgres
+#RUN pip install dbt-core
+#RUN pip install sqlalchemy
 

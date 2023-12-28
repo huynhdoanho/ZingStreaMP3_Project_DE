@@ -1,4 +1,7 @@
 -- eventsim
+
+cd eventsim
+
 docker build -t events:1.0 .
 
 docker run -itd --network host --name million_events --memory="2g" --memory-swap="2g" --oom-kill-disable events:1.0 -c "examples/example-config.json" --start-time "2023-12-27T00:00:00" --end-time "2023-12-30T23:00:00" --nusers 100000 --growth-rate 10 --userid 1 --kafkaBrokerList localhost:9092 --randomseed 1 --continuous

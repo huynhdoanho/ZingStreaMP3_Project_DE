@@ -1,0 +1,9 @@
+minio==1.0.0
+pyarrow
+pandas
+apache-airflow
+apache-airflow-providers-postgres
+dbt-postgres
+dbt-core
+sqlalchemy
+pyspark==3.3
