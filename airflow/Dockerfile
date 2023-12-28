@@ -11,11 +11,11 @@ RUN apt-get update && \
 ENV SPARK_HOME=/opt/airflow/spark
 ENV SPARK_MASTER_URL=spark://spark-master:7077
 
-RUN curl -O https://dlcdn.apache.org/spark/spark-3.3.3/spark-3.3.3-bin-hadoop3.tgz \
-    && tar zxvf spark-3.3.3-bin-hadoop3.tgz \
-    && rm -rf spark-3.3.3-bin-hadoop3.tgz \
+RUN curl -O https://dlcdn.apache.org/spark/spark-3.3.4/spark-3.3.4-bin-hadoop3.tgz \
+    && tar zxvf spark-3.3.4-bin-hadoop3.tgz \
+    && rm -rf spark-3.3.4-bin-hadoop3.tgz \
     && rm -rf /opt/airflow/spark \
-    && ln -s /opt/airflow/spark-3.3.3-bin-hadoop3 /opt/airflow/spark
+    && ln -s /opt/airflow/spark-3.3.4-bin-hadoop3 /opt/airflow/spark
 
 RUN curl -O https://repo1.maven.org/maven2/software/amazon/awssdk/s3/2.18.41/s3-2.18.41.jar \
     && curl -O https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk/1.12.367/aws-java-sdk-1.12.367.jar \
