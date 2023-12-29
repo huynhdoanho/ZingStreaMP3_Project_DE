@@ -1,4 +1,4 @@
-minio==1.0.0
+minio==3.0.0
 pyarrow
 pandas
 apache-airflow

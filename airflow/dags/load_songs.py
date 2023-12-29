@@ -11,7 +11,7 @@ engine = create_engine('postgresql://postgres:postgres@postgres_zingstreamp3:543
 
 def load_file_to_postgres():
     songs = pd.read_csv("/zingstreamp3_dbt/seeds/songs.csv")
-    songs.to_sql("songs", schema='staging', con=engine)
+    songs.to_sql("songs", schema='staging', con=engine, if_exists='replace')
 
 
 dag = DAG(

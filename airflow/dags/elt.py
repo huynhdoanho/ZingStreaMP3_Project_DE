@@ -18,8 +18,8 @@ from pyspark.sql.types import (IntegerType,
 
 # time
 now = datetime.datetime.now()
-month = 11 #now.month
-day = 28    # now.day - 1
+month = now.month
+day = now.day - 1
 
 # postgres config
 postgres_url = "jdbc:postgresql://postgres_zingstreamp3:5432/zingstreamp3"

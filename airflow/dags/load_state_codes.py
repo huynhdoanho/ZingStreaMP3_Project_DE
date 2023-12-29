@@ -7,10 +7,11 @@ from minio import Minio
 import logging
 
 
+
 def load_file_to_minio(file_name):
 
     client = Minio(
-        "minio:9000",
+        endpoint="minio:9000",
         access_key="minio",
         secret_key="minio123",
         secure=False
