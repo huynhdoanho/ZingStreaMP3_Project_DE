@@ -3,7 +3,7 @@
 WITH date_series AS
 (
     SELECT
-        generate_series('2023-10-01'::TIMESTAMP, '2024-01-01'::TIMESTAMP, INTERVAL '1 HOUR') AS date
+        generate_series('2023-10-01'::TIMESTAMP, '2024-12-31'::TIMESTAMP, INTERVAL '1 HOUR') AS date
 )
 SELECT
     EXTRACT(EPOCH FROM date) AS dateKey,
