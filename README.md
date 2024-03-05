@@ -5,6 +5,7 @@ The project will stream events that are created by a fictitious music streaming 
 
 You will be able to generate a sample dataset for this project by using Eventsim and the Million Songs dataset. Apache Kafka and Apache Spark are two examples of streaming technologies that are used for processing data in real-time. The Structured Streaming API offered by Spark makes it possible for data to be processed in real-time in mini-batches, which in turn offers low-latency processing capabilities. The processed data are uploaded to MinIO, where they are then subjected to transformation with the assistance of dbt. We can clean the data, convert the data, and aggregate the data using dbt so that it is ready for analysis. The data is then sent to PostgreSQL, which serves as a data warehouse, and Power BI is used to create a visual representation of the data. Apache AirFlow has been used for the purpose of orchestration, whilst Docker is the tool of choice when it comes to containerization.
 
+
 ## Technologies:
 - Orchestration: Apache Airflow 
 - Streaming: Apache Spark, Apache Kafka
@@ -14,8 +15,11 @@ You will be able to generate a sample dataset for this project by using Eventsim
 - Data generate: Eventsim
 - Data visualize: Power BI
 
+
 ## Overview:
 ![alt text](https://github.com/huynhdoanho/ZingStreaMP3_Project_DE/blob/9646116ad2d5a4da0c0704d1519fd9d712f0862a/images/overview.png)
 
+## Dashboard: 
+![alt text](https://github.com/huynhdoanho/ZingStreaMP3_Project_DE/blob/c3ffa958976cc41778316b631c6af51607d41d47/images/dashboard.png)
 
 # UPDATING ....
